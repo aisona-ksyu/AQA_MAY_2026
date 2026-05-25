@@ -8,7 +8,18 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-//        String s = "asd";
+
+        String em = "test_email_for_qa@gmail_com";
+        System.out.println(em.replace("_", "."));
+
+        String t = "thisstringhas$ some fragment$thathastobeextracted";
+        System.out.println(t.indexOf("$"));
+        if (t.contains("$")) {
+            System.out.println(t.substring(t.indexOf("$")+ 1,
+                    t.lastIndexOf("$")));
+        }
+
+        //        String s = "asd";
 //        System.out.println(s.length());
 //        System.out.println(s.equals("asd"));
 //        System.out.println(s.equalsIgnoreCase("Asd"));
@@ -41,44 +52,46 @@ public class Main {
 //        System.out.println("This string will be substringed".substring(10));
 //        System.out.println("This string will be substringed".substring(10, 20));
 
-        Random rand = new Random();
-        int i = rand.nextInt(11);
-//        boolean b = true;
-//        System.out.println("b: " + b);
-//        System.out.println("!b: " + !b);
 
-        System.out.println("i: " + i);
-        System.out.println("i == 10 -> " + (i == 10));
-        System.out.println("i != 10 -> " + (i != 10));
-        System.out.println("i > 5 -> " + (i > 5));
-        System.out.println("i < 5 -> " + (i < 5));
-        System.out.println("i >= 5 -> " + (i >= 5));
-        System.out.println("i <= 5 -> " + (i <= 5));
 
-        if (i >= 8) {
-            System.out.println("i was greater or equal to 8");
-        }
-
-        if (i >= 4) {
-            System.out.println("i was greater or equal to 4");
-        }
-
-        if (i >= 2) {
-            System.out.println("i was greater or equal to 2");
-        } else {
-            System.out.println("i was NOT greater or equal to 2");
-        }
-
-        if (i == 1) {
-            System.out.println("i was 1");
-        } else if (i == 3) {
-            System.out.println("i was 3");
-        } else {
-            System.out.println("i was neither 1 or 3");
-        }
-
-        System.out.println("Done!");
-
-    }
+//        Random rand = new Random();
+//        int i = rand.nextInt(11);
+////        boolean b = true;
+////        System.out.println("b: " + b);
+////        System.out.println("!b: " + !b);
+//
+//        System.out.println("i: " + i);
+//        System.out.println("i == 10 -> " + (i == 10));
+//        System.out.println("i != 10 -> " + (i != 10));
+//        System.out.println("i > 5 -> " + (i > 5));
+//        System.out.println("i < 5 -> " + (i < 5));
+//        System.out.println("i >= 5 -> " + (i >= 5));
+//        System.out.println("i <= 5 -> " + (i <= 5));
+//
+//        if (i >= 8) {
+//            System.out.println("i was greater or equal to 8");
+//        }
+//
+//        if (i >= 4) {
+//            System.out.println("i was greater or equal to 4");
+//        }
+//
+//        if (i >= 2) {
+//            System.out.println("i was greater or equal to 2");
+//        } else {
+//            System.out.println("i was NOT greater or equal to 2");
+//        }
+//
+//        if (i == 1) {
+//            System.out.println("i was 1");
+//        } else if (i == 3) {
+//            System.out.println("i was 3");
+//        } else {
+//            System.out.println("i was neither 1 or 3");
+//        }
+//
+//        System.out.println("Done!");
+//
+   }
 
 }
