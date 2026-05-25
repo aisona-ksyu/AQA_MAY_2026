@@ -15,8 +15,8 @@ public class Main {
         String t = "thisstringhas$ some fragment$thathastobeextracted";
         System.out.println(t.indexOf("$"));
         if (t.contains("$")) {
-            System.out.println(t.substring(t.indexOf("$")+ 1,
-                    t.lastIndexOf("$")));
+            System.out.println(t.substring(t.indexOf("$")+1,
+                    t.lastIndexOf("$")).trim());
         }
 
         //        String s = "asd";
