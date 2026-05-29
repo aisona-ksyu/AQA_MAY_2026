@@ -18,7 +18,28 @@ public class HomeWork {
                 "asd.asd@.asdasd",
                 "asd@@.asdasd",
                 "asd@@asd.asd",
-                "some_email_that_is_very_long@long_domain_name.com" //+
-        };
+                "some_email_that_is_very_long@long_domain_name.com",//+
+                "back@to@ asdasd",
+                "asd@TA.com",
+                "asd@TRatata.com.com",
+        "asd.as@email.com"};
+        for (int i = 0; i < emails.length; i++) {
+            if (emails[i].contains("@")) {
+                String domain = emails[i].substring(emails[i].indexOf("@") + 1);
+
+                if (domain.indexOf(".") == domain.lastIndexOf(".")
+                        && emails[i].indexOf("@") >= 3
+                        && domain.length() >= 7
+//                    && !emails[i].contains("@@")
+//                        && emails[i].lastIndexOf(".") > emails[i].indexOf("@")
+                        && emails[i].indexOf("@") == emails[i].lastIndexOf("@")
+                        && !domain.startsWith(".")
+                        && !domain.endsWith(".")
+                ) {
+                    System.out.println("Valid email - " + emails[i]);
+                }
+            }
+        }
+
     }
 }
