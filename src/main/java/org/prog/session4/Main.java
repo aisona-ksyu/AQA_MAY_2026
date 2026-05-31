@@ -26,15 +26,20 @@ public class Main {
         Car car2 = new Car();
         CarService carService = new CarService();
 
+
         carService.paintCar(car1, "Green");
         carService.paintCar(car2, "Blue");
 
         car1.maxSpeed = 50;
-        car2.maxSpeed = 250;
+        car2.maxSpeed = 70;
+
+        car1.owner = "Bill";
+        car2.owner = "David";
 
         int distance = 45;
 
-        car1.goTo(distance);
-        car2.goTo(500);
+        String destination = "London";
+        car1.goTo(distance,destination);
+        car2.goTo(100, "Manchester");
     }
 }
