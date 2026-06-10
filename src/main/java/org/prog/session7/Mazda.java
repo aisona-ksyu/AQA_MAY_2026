@@ -13,6 +13,6 @@ public class Mazda implements ICar {
 
     @Override
     public String getPlateNumber() {
-        return "FACTORY_DEFAULT";
+            return "FACTORY_DEFAULT";
     }
 }
